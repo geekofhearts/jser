@@ -9,7 +9,9 @@ VERSIONS:
 =
 
 0.0.X - I fixed something broken. moar coffee. should only ever make headaches go away for end users.
+
 0.X.0 - new featureset, cake was had. may involve updating of config files (which I can probably automate) or dependent modules (which I probably can't).
+
 X.0.0 - champagne, baloons, new website branding. possibly a LAN party.
 
 note that X may extend beyond 9, because I am a massichist and am not made of balloon money.
