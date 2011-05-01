@@ -20,4 +20,4 @@ var jser = http.createServer(function (req, res) {
 
 jser.listen(port);
 
-console.log('Server running at http://*:1337/');
+console.log('Server running at http://*:' + port + '/');
