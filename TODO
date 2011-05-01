@@ -1,0 +1,20 @@
+sort out unit testing
+
+parse a config file
+  config file value: port
+  config file value: web root
+
+actually return the files in the web root, based on the HTTP request path.
+
+404 when said file doesn't exist.
+
+figure out a way to test VHOSTS
+
+add support for VHOSTS each with their own web root
+  config file value: vhosts array
+
+add support for running node.js files as their own webserver instances, via e.g. index.js .
+
+add support for bypassing the URL and always passing to index.js at the root.
+
+if we get here, there will be cake.
