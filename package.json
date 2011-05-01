@@ -1,0 +1,15 @@
+{
+  "name": "jser",
+  "description": "A Simple Webserver",
+  "version": "0.0.1",
+  "author": "Joe Jordan <joe.jordan86@gmail.com> (http://twitter.com/geekofhearts)",
+  "contributors": [ 
+  ],
+  "dependencies": {
+  },
+  "keywords": ["webserver", "minimalist"],
+  "repository": "git://github.com/geekofhearts/jser",
+  "main": "jser",
+  "bin": { "jser": "./src/jser.js" },
+  "engines": { "node": ">= 0.4.7" }
+}
