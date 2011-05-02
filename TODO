@@ -1,4 +1,8 @@
-sort out unit testing
+-sort out unit testing-
+
+make server a deamonisable process, not an inline one.
+
+break apart functionality into functions for testing.
 
 parse a config file
   config file value: port
