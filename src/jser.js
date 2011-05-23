@@ -18,6 +18,19 @@ var jser = http.createServer(function (req, res) {
   res.end();
 });
 
-jser.listen(port);
+// now set up external interface:
 
-console.log('Server running at http://*:' + port + '/');
+var serverInterface = {
+  'start' : function(iport) {
+    if (iport) {
+      port = iport;
+    }
+    jser.listen(port);
+    console.log('Server running at http://*:' + port + '/');
+  },
+  'stop' : function() {
+    jser.close();
+  }
+};
+
+exports.server = serverInterface;

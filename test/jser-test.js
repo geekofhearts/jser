@@ -3,21 +3,21 @@ var vows = require('vows'),
 
 var jser = require('../src/jser.js');
 
-function isDefined(obj) {
-  return 'undefined' != typeof(obj);
-}
-
-vows.describe('jser').addBatch({
-  'the command interface' : {
-    server : function() { return jser["server"]; },
-    'has property server' : function(server) {
-      assert.ok(isDefined(server));
+vows.describe("jser's main module").addBatch({
+  'the interface': {
+    topic: jser,
+    'has property server': function(topic) {
+      assert.isObject(topic);
+      assert.isObject(topic['server']);
     },
-    'jser.server has a property called start' : function(server) {
-      assert.ok(isDefined(server['start']));
-    },
-    'jser.server has a property called stop' : function(server) {
-      assert.ok(isDefined(server['stop']));
+    'the server interface': {
+      topic: function(moduleTopic) { return moduleTopic.server; },
+      'jser.server has a property called start': function(server) {
+        assert.isFunction(server['start']);
+      },
+      'jser.server has a property called stop': function(server) {
+        assert.isFunction(server['stop']);
+      }
     }
   }
 }).export(module);

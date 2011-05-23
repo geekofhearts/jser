@@ -1,4 +1,4 @@
--sort out unit testing-
+DONE sort out unit testing
 
 make server a deamonisable process, not an inline one.
 
